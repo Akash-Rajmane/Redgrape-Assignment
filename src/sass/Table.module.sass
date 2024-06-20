@@ -1,0 +1,47 @@
+@import "../sass/variables.sass"
+
+.table_container
+    overflow-x: auto
+    -ms-overflow-style: none   
+    scrollbar-width: none      
+
+    &::-webkit-scrollbar 
+        display: none 
+
+.table
+    background-color: #fff
+    margin-top: 30px
+    margin-bottom: 20px
+    width: 100%
+    border-collapse: collapse
+    border-radius: 4px
+    box-shadow: $shadow 0px 3px 8px
+
+    .headings
+        color: $purple
+        border-bottom: 2px solid $purple
+        font-size: 14px
+        height: 60px
+
+    .timage
+        border-radius: 50%
+
+    tbody
+        color: $main_text
+
+        tr
+            border-bottom: 1px solid $greybrown
+            height: 75px
+            font-size: 14px
+
+    td, th  
+        max-width: max-content
+        text-align: start
+        min-width: 120px 
+    
+    .cb
+        min-width: 80px
+       
+    .center
+        text-align: center
+

@@ -1,0 +1,95 @@
+@import "../sass/variables.sass"
+
+.card
+    background-color: #fff
+    width: 380px
+    height: 360px
+    border-radius: 4px
+    box-shadow: $shadow 0px 3px 8px
+
+    .card_header
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 15px 15px 15px 15px
+        height: 60px
+        border-bottom: 2px solid $greybrown
+
+        .card_title
+            font-size: 26px
+            color: $main_text
+        
+        .card_image
+            border-radius: 50%
+            width: 45px
+            height: 45px
+
+    .card_body
+        padding: 18px 15px 18px 15px
+        display: flex
+        flex-direction: column
+        gap: 22px
+        font-size: 14px
+
+
+    .card_footer 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 15px 20px 10px 15px
+        font-size: 14px
+
+        .btns
+            display: flex
+            gap: 20px
+
+.card_text
+    color: $card_text
+
+.card_subtext
+    color: $card_subtext
+    margin-left: 5px
+
+
+@media only screen and (max-width: 992px)
+    .card
+        width: 100%
+
+@media only screen and (max-width: 480px)
+    .card
+        width: 100%
+        height: max-content
+
+        .card_header
+            .card_title
+                font-size: 20px
+                color: $main_text
+            
+            .card_image
+                width: 40px
+                height: 40px
+
+        .card_body
+            padding: 18px 15px 18px 15px
+            display: flex
+            flex-direction: column
+            gap: 20px
+            font-size: 12px
+
+        .card_footer 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: start
+            padding: 10px 20px 25px 15px
+            gap: 10px
+            font-size: 12px
+
+        .btns
+            display: flex
+            gap: 20px
+            align-self: start
+
+

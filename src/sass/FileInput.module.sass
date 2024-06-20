@@ -1,0 +1,75 @@
+@import "../sass/variables.sass"
+@import "../sass/mixins.sass"
+
+.input_box 
+    display: flex
+    flex-direction: column
+    margin-bottom: 0
+   
+
+.input_label 
+    margin-bottom: 3px
+
+
+.file_input_wrapper 
+    display: flex
+    align-items: center
+    position: relative
+    border: 1px solid $greybrown
+    padding: 7px 
+    height: 50px
+    border-radius: 4px
+
+
+.camera_wrapper
+    display: inline-block
+    margin-right: 10px
+    background-color: $pink
+    border-radius: 4px
+    width: 30px
+    height: 30px
+    border: 1px dashed $lightred
+    position: relative
+
+    .camera_icon 
+        position: absolute
+        left:50%
+        top:50%
+        transform: translate(-50%,-50%)
+        width: 16px
+        height: 16px
+
+
+.upload_text 
+    margin-right: 20px
+
+    .file
+        white-space: nowrap 
+        width: 100px 
+        overflow: hidden
+        text-overflow: ellipsis
+
+    .text
+        font-size: 10px
+        color: $card_subtext
+        font-weight: bold
+
+    .sub_text
+        font-size: 7px
+        color: $card_subtext
+
+
+.file_input 
+   display: none
+
+
+.file_button 
+    @include custom_btn(30px,100px,#fff,$red,12px)
+    padding: 2px
+    cursor: pointer
+    margin-left: auto
+    z-index: 1
+
+    
+    
+

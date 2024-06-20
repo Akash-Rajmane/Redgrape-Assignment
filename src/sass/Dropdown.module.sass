@@ -1,0 +1,49 @@
+@import "../sass/variables.sass"
+
+.custom_dropdown_box
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 3px
+    width: 100%
+    position: relative
+    color: $card_text
+
+.dropdown
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid $greybrown
+    cursor: pointer
+    height: 30px
+    padding-left: 10px
+    position: relative
+    border-radius: 4px
+    font-size: 14px
+
+    .arrow
+        color: $card_subtext
+        transform: scaleX(1.5)
+        font-size: 18px
+        position: absolute
+        right: 10px
+        top: 0px
+
+.dropdown_menu
+    position: absolute
+    top: 60px
+    background-color: #fff
+    border: 1px solid $greybrown
+    width: 100%
+    z-index: 1000
+    border-radius: 4px
+
+    .dropdown_item
+        padding: 8px
+        margin: 4px
+        cursor: pointer
+        border-radius: 4px
+        font-size: 14px
+
+        &:hover
+            background-color: #E5E7E9
